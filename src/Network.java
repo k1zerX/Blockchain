@@ -111,6 +111,6 @@ public class Network implements Runnable{
 		catch(Exception e) {
 			
 		}
-		System.out.println("Блоки успешно синхронизированы");
+		System.out.println("Р…Р»РѕРєРё СѓСЃРїРµС€РЅРѕ СЃРёРЅС…СЂРѕРЅРёР·РёСЂРѕРІР°РЅС‹");
 	}
 }

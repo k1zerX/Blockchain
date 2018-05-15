@@ -13,20 +13,20 @@ public class Main{
 		String a;
 		
 		System.out.println();
-		System.out.println("Вы в любое время можете ввести \"stop\" для выхода из программы\nили \"back\" чтобы вернуться назад");
+		System.out.println("Р’С‹ РІ Р»СЋР±РѕРµ РІСЂРµРјСЏ РјРѕР¶РµС‚Рµ РІРІРµСЃС‚Рё \"stop\" РґР»СЏ РІС‹С…РѕРґР° РёР· РїСЂРѕРіСЂР°РјРјС‹\nРёР»Рё \"back\" С‡С‚РѕР±С‹ РІРµСЂРЅСѓС‚СЊСЃСЏ РЅР°Р·Р°Рґ");
 		System.out.println();
 		do{
-			System.out.println("Выберите действие:");
-			System.out.println("Для того чтобы добавить блок введите \"add\",");
-			System.out.println("Для того чтобы проверить валидность блокчейна введите \"check\",");
-			System.out.println("Для того чтобы синхронизировать блокчейны введите \"synchronize\"");
-			System.out.println("Для того чтобы изменить блокчейн введите \"god mode\"");
+			System.out.println("Р’С‹Р±РµСЂРёС‚Рµ РґРµР№СЃС‚РІРёРµ:");
+			System.out.println("Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РґРѕР±Р°РІРёС‚СЊ Р±Р»РѕРє РІРІРµРґРёС‚Рµ \"add\",");
+			System.out.println("Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РїСЂРѕРІРµСЂРёС‚СЊ РІР°Р»РёРґРЅРѕСЃС‚СЊ Р±Р»РѕРєС‡РµР№РЅР° РІРІРµРґРёС‚Рµ \"check\",");
+			System.out.println("Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ СЃРёРЅС…СЂРѕРЅРёР·РёСЂРѕРІР°С‚СЊ Р±Р»РѕРєС‡РµР№РЅС‹ РІРІРµРґРёС‚Рµ \"synchronize\"");
+			System.out.println("Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РёР·РјРµРЅРёС‚СЊ Р±Р»РѕРєС‡РµР№РЅ РІРІРµРґРёС‚Рµ \"god mode\"");
 			
 			a = in.nextLine();
 			
 		    switch(a){
 				case "add": 
-					System.out.println("Введите данные блока:");
+					System.out.println("Р’РІРµРґРёС‚Рµ РґР°РЅРЅС‹Рµ Р±Р»РѕРєР°:");
 					a = in.nextLine();
 					blockchain.addBlock(a);
 					break;
@@ -61,7 +61,7 @@ public class Main{
 	    			do {
 	    				boolean bool = true;
 	    				int i = -1;
-		    			System.out.println("Введите номер блока который хотите отредактировать");
+		    			System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ Р±Р»РѕРєР° РєРѕС‚РѕСЂС‹Р№ С…РѕС‚РёС‚Рµ РѕС‚СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ");
 		    			a = in.nextLine();
 		    			try {
 		    				i = Integer.parseInt(a);
@@ -72,10 +72,10 @@ public class Main{
 		    			
 						if (bool) {
 							do {
-								System.out.println("Выберите и введите значение которое хотите отредактировать\ndata, current hash, previous hash, nonce, complexity");
+								System.out.println("Р’С‹Р±РµСЂРёС‚Рµ Рё РІРІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ РєРѕС‚РѕСЂРѕРµ С…РѕС‚РёС‚Рµ РѕС‚СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ\ndata, current hash, previous hash, nonce, complexity");
 								a = in.nextLine();
 								if(!a.equals("stop") && !a.equals("back")) {
-					    			System.out.println("Введите новое значение");
+					    			System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРІРѕРµ Р·РЅР°С‡РµРЅРёРµ");
 									String buf = in.nextLine();
 									if(buf.equals("stop")) {
 										a = buf;
@@ -115,7 +115,7 @@ public class Main{
 													break;
 												
 												default:
-									    			System.out.println("Вы ввели некорректное значение");
+									    			System.out.println("Р’С‹ РІРІРµР»Рё РЅРµРєРѕСЂСЂРµРєС‚РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ");
 									    			a = "y";
 													break;
 											}
@@ -134,7 +134,7 @@ public class Main{
 	    			break;
 	    			
 	    		default:
-	    			System.out.println("Вы ввели команду некорректно");
+	    			System.out.println("Р’С‹ РІРІРµР»Рё РєРѕРјР°РЅРґСѓ РЅРµРєРѕСЂСЂРµРєС‚РЅРѕ");
 	    			break;
 		    }
 		} while(!a.equals("stop"));

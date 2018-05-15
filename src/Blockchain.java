@@ -125,7 +125,7 @@ public class Blockchain {
 			findComplexity(realMiningTime);
 		}
 		
-		System.out.println("Блок успешно создан\nего хеш: " + this.blockchain.get(this.blockchain.size()-1).currentHash);
+		System.out.println("Р…Р»РѕРє СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ\nРµРіРѕ С…РµС€: " + this.blockchain.get(this.blockchain.size()-1).currentHash);
 		System.out.println();
 		
 		block.writeBlock(this.blockchain.size()-1);
